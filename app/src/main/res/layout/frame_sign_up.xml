@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingTop="?attr/actionBarSize">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/name_wrapper"
+        style="@style/login.style"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/title.name"
+            android:maxLength="50"
+            android:inputType="textCapWords" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/number_wrapper"
+        style="@style/login.style"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/title.number"
+            android:maxLength="15"
+            android:imeOptions="actionSend"
+            android:inputType="number" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <com.luseen.autolinklibrary.AutoLinkTextView
+        android:id="@+id/help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:text="@string/title.terms"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/go"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="@string/button.verify"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Button"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+</LinearLayout>

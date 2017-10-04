@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="drawer" type="id"/>
+    <item name="nav" type="id"/>
+    <item name="coordinator" type="id"/>
+
+
+    <item name="record" type="id"/>
+    <item name="image" type="id"/>
+    <item name="over" type="id"/>
+    <item name="progress" type="id"/>
+
+</resources>
